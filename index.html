@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <ul class="menu">
+            <div class="sch">
+                <li>SCHEDULE, VENUE & ACCOMODATION</li>
+                <img class="culine" id="w1" src="./images/w3.png" alt="">
+            </div>
+            <div class="sch">
+                <li><a href="#"></a>PEOPLE</li>
+                <img class="culine" id="w2" src="./images/w2.png" alt="">
+            </div>
+            <div class="sch">
+                <li><a href="#"></a>CALL FOR PARTICIPATION</li>
+                <img class="culine" id="w3" src="./images/w3.png" alt="">
+            </div>
+        </ul>
+    </nav>
+
+    <div class="item">
+        <img src="./images/suitcase.png" />
+        <span class="caption">23-24 November 2023</span>
+    </div>
+    <div class="item">
+        <img src="./images/location.png" />
+        <span class="caption">School of Design, UPES, Dehradun </span>
+    </div>
+    <div class="item">
+        <img id="cross" src="./images/cross.png" />
+        <span class="caption"></span>
+    </div>
+    <div class="item">
+        <img id="mail" src="./images/mail.png" />
+        <span id="mail_caption" class="caption">info@indiahci.com</span>
+    </div>
+
+
+    <div class="container">
+        <div class="watermark">
+            <div class="watermark-slider">
+                <img src="./images/watermark.png" alt="">
+            </div>
+        </div>
+
+        <div class="slider">
+            <img src="./images/slider.png" alt="">
+        </div>
+
+        <div class="wrapper">
+            <div class="call">
+                <p>Call for participation</p>
+            </div>
+            <div class="heading">
+                <h2>Call For Papers</h2>
+            </div>
+            <div class="content">
+                India HCI 2023 is the 14th edition of the international conference series on Human-Computer Interaction
+                (HCI). Papers are the main medium for conveying new research results at India HCI. We seek submissions
+                that
+                push the boundaries of human knowledge and that describe original, unpublished work in the field of HCI.
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="main_footer">
+            <div>
+                <img class="footer_ele" src="./images/IndiaHCIPAI.png" alt="">
+                <p id="credit" class="footer_ele">© India HCI 2023</p>
+            </div>
+            <div>
+                <img id="ig" class="footer_ele handles" src="./images/instg.png" alt="">
+                <img id="li" class="footer_ele handles" src="./images/linkedin.png" alt="">
+                <img id="fb" class="footer_ele handles" src="./images/fb.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var copy = document.querySelector(".watermark-slider").cloneNode(true);
+        document.querySelector(".watermark").appendChild(copy);
+    </script>
+
+</body>
+
+</html>
