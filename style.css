@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -67,11 +68,11 @@ nav a:hover {
     padding-left: 22px;
 }
 
-.culine{
+.culine {
     opacity: 0;
 }
 
-.sch:hover .culine{
+.sch:hover .culine {
     opacity: 1;
     transition: 0.4s ease-in;
 }
@@ -84,8 +85,8 @@ nav a:hover {
 
 .wrapper {
     position: absolute;
-    width: 480px;
-    height: 400px;
+    width: 525px;
+    height: 522px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.192361) 50%, rgba(255, 255, 255, 0) 100%);
     backdrop-filter: blur(50px);
     border: 1px solid white;
@@ -102,11 +103,14 @@ nav a:hover {
     margin-top: 8px;
     margin-bottom: 16px;
     font-family: sans-serif;
+    font-size: 25px;
+    padding-bottom: 20px;
 }
 
 .call {
     color: rgba(89, 89, 94, 1);
     font-family: sans-serif;
+    padding-bottom: 15px;
 }
 
 .content {
@@ -116,9 +120,9 @@ nav a:hover {
 
 .slider {
     position: absolute;
-    margin-top: 410px;
+    top: 753px;
     z-index: 3;
-    margin-left: 180px;
+    left: 180px;
 }
 
 .slider img {
@@ -132,19 +136,51 @@ nav a:hover {
     white-space: nowrap;
     opacity: 0.5;
     z-index: 1;
+    overflow: hidden;
+}
+
+.readmecircle {
+    position: absolute;
+    width: 134.28px;
+    height: 133.86px;
+    left: 365.73px;
+    top: 18.67px;
+    z-index: 2;
+}
+
+.readme {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.readme p a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    position: relative;
+    bottom: 70px;
+    left: 368px;
+    z-index: 8;
+}
+
+.readme p a:hover{
+    text-decoration: underline;
+    color: #ef4b3f;
 }
 
 .logos:before,
 .logos:after {
-  position: absolute;
-  top: 0;
-  width: 250px;
-  height: 100%;
-  content: "";
-  z-index: 2;
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
 }
 
-.watermark-slider{
+.watermark-slider {
     display: inline-block;
     animation: 35s slide infinite linear;
 }
@@ -154,10 +190,11 @@ nav a:hover {
     width: 100%;
 }
 
-@keyframes slide{
+@keyframes slide {
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
@@ -198,7 +235,7 @@ div.item {
 .footer {
     position: absolute;
     height: 85px;
-    top: 100%;
+    top: 120%;
     width: 100%;
     padding: 30px;
     background: #1F1F1F;
