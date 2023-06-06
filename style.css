@@ -86,7 +86,7 @@ nav a:hover {
     transition: 0.4s ease-in;
 }
 
-.menu li {
+.menu p {
     padding: 0px 25px;
     font-size: 12px;
     display: block;
@@ -127,11 +127,90 @@ nav a:hover {
     font-family: system-ui;
 }
 
+.submit{
+    position: absolute;
+    display: flex;
+    background-color: black;
+    width: 130px;
+    height: 57px;
+    top: 15px;
+    left: -127px;
+    align-items: center;
+    border-radius: 18px;
+    justify-content: center;
+}
+
+.submit p{
+    color: white;
+    letter-spacing: -0.15px;
+    padding: 8px;
+    font-family: system-ui;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: linear-gradient(121.81deg, #FFAA00 15.75%, #FF7C13 36.25%, #FF0943 82.91%, #FF0048 86.44%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.submit1{
+    position: absolute;
+    display: flex;
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    left: 10px;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.submit1 p{
+    color: white;
+    letter-spacing: -0.15px;
+    padding: 8px;
+    font-family: system-ui;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: linear-gradient(121.81deg, #FFAA00 15.75%, #FF7C13 36.25%, #FF0943 82.91%, #FF0048 86.44%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.register{
+    position: absolute;
+    display: flex;
+    background-color: black;
+    width: 150px;
+    height: 60px;
+    left: 200px;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.register p{
+    color: white;
+    letter-spacing: -0.15px;
+    padding: 8px;
+    font-family: system-ui;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.dont{
+    display: none;
+}
+
 .slider {
     position: absolute;
     top: 753px;
     z-index: 3;
-    left: 180px;
+    left: 250px;
 }
 
 .slider img {
@@ -297,8 +376,8 @@ div.item {
     }
     
     .logo img {
-        width: 52.95px;
-        height: 53.88px;
+        width: 62.95px;
+        height: 63.88px;
     }
 
     .itemcontainer{
@@ -331,11 +410,11 @@ div.item {
     }
 
     .wrapper {
-        position: relative;
+        position: absolute;
         width: 500px;
         height: 400px;
         left: calc(120% - 580px/2 - 400px);
-        margin-top: 3px;
+        margin-top: 60px;
     }
 
     .slider {
@@ -350,6 +429,14 @@ div.item {
     .slider img{
         width: 100%;
         height: 60px;
+    }
+
+    .show{
+        display: none;
+    }
+
+    .dont{
+        display: flex;
     }
 
     .footer{
