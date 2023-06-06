@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +27,14 @@ nav a {
 
 nav a:hover {
     color: #ef4b3f;
+}
+
+.topnav {
+    display: flex;
+}
+
+.icon {
+    display: none;
 }
 
 .logo img {
@@ -155,7 +164,7 @@ nav a:hover {
     line-height: 24px;
 }
 
-.readme p a{
+.readme p a {
     text-decoration: none;
     color: black;
     cursor: pointer;
@@ -165,7 +174,7 @@ nav a:hover {
     z-index: 8;
 }
 
-.readme p a:hover{
+.readme p a:hover {
     text-decoration: underline;
     color: #ef4b3f;
 }
@@ -279,14 +288,72 @@ div.item {
 
 
 @media screen and (max-width: 600px) {
-    nav {
-        display: block;
-        position: relative;
-        padding: 15px 20px;
+    .topnav {
+        display: none;
     }
 
-    .menu {
-        margin-top: 15px;
+    .logo{
+        margin-left: 100px;
+    }
+    
+    .logo img {
+        width: 52.95px;
+        height: 53.88px;
+    }
+
+    .itemcontainer{
+        margin-top: 150px;
+    }
+
+    .item {
+        position: absolute;
+        /* left: 8.33%; */
+        right: 30.33%;
+        top: 16.67%;
+        bottom: 16.67%;
+    }
+
+    #cross {
         display: none;
+    }
+
+    #mail {
+        padding-left: 0px;
+    }
+
+    #mail_caption {
+        padding-left: 0px;
+    }
+
+    .arg{
+        position: relative;
+        bottom: 40px;
+    }
+
+    .wrapper {
+        position: relative;
+        width: 500px;
+        height: 400px;
+        left: calc(120% - 580px/2 - 400px);
+        margin-top: 3px;
+    }
+
+    .slider {
+        position: relative;
+        top: -450px;
+        left: 70px;
+        z-index: 3;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slider img{
+        width: 100%;
+        height: 60px;
+    }
+
+    .footer{
+        top: 135%;
+        width: 131%;
     }
 }
